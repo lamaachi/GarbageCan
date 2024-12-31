@@ -1,50 +1,82 @@
-# Welcome to your Expo app 👋
+# Garbage Can Monitoring App (React Native + Expo)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This project is a mobile application built with React Native and Expo that monitors the fill level and gas levels of an IoT-enabled garbage can. It provides a user-friendly interface to visualize real-time data and receive alerts when certain thresholds are met.
 
-## Get started
+## Features
 
-1. Install dependencies
+*   **Real-time Data Visualization:**
+    *   Displays the current fill level of the garbage can using a progress bar.
+    *   Indicates the gas level status (Safe, Warning, Alert) with color-coded icons and numerical values (ppm).
+*   **Simulated Data Updates:**
+    *   Simulates data coming from an IoT sensor using a timer-based update mechanism (for demonstration purposes).
+*   **User Interface:**
+    *   Clean and intuitive design for easy monitoring.
+    *   Clear visual hierarchy to emphasize important information.
 
-   ```bash
-   npm install
-   ```
+## Prerequisites
 
-2. Start the app
+Before you begin, ensure you have met the following requirements:
 
-   ```bash
+*   **Node.js and npm:** You'll need Node.js (which includes npm) installed on your system. Download it from [https://nodejs.org/](https://nodejs.org/).
+*   **Expo CLI:** Install the Expo CLI globally using:
+
+    ```bash
+    npm install --global expo-cli
+    ```
+
+*   **Expo Go App (or Development Client):**
+    *   To run the app during development, you'll need either the Expo Go app installed on your physical device or a simulator/emulator set up on your computer.
+    *   Alternatively, you can create a development client, which is recommended for more advanced use cases involving custom native code.
+
+## Installation
+
+1. **Clone the repository:**
+
+    ```bash
+    git clone [<repository-url>](https://github.com/lamaachi/GarbageCan)
+    cd GarbageCan
+    ```
+
+2. **Install dependencies:**
+
+    ```bash
+    npx expo install
+    ```
+
+## Running the App
+
+1. **Start the development server:**
+
+    ```bash
     npx expo start
-   ```
+    ```
 
-In the output, you'll find options to open the app in a
+2. **Open the app:**
+    *   **Expo Go (Physical Device):** Scan the QR code displayed in the terminal or in your browser using the Expo Go app on your device.
+    *   **Simulator/Emulator:** Press `i` to open in an iOS simulator or `a` to open in an Android emulator (if you have them set up).
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Further Development
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+This project serves as a basic example. Here are some potential improvements and extensions:
 
-## Get a fresh project
+*   **Integrate with Real IoT Data:** Replace the simulated data with actual data from a real IoT garbage can sensor using APIs or protocols like MQTT or HTTP.
+*   **Advanced Visualizations:** Add charts (e.g., line graphs for trends), gauges, or other visual elements to display data in more informative ways.
+*   **Map Integration:** If monitoring multiple garbage cans, use `react-native-maps` to display their locations and statuses on a map.
+*   **Push Notifications:** Implement push notifications using `expo-notifications` to alert users when the garbage can is full or gas levels are critical.
+*   **User Authentication:** Add user login and profiles to allow users to manage multiple garbage cans.
+*   **Historical Data:** Store and display historical data for analysis and reporting.
 
-When you're ready, run:
+## Contributing
 
-```bash
-npm run reset-project
-```
+Contributions are welcome! Please feel free to submit pull requests or open issues to suggest improvements or report bugs.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## License
 
-## Learn more
+This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
 
-To learn more about developing your project with Expo, look at the following resources:
+## Acknowledgments
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+*   [React Native](https://reactnative.dev/)
+*   [Expo](https://expo.dev/)
+*   [react-native-paper](https://callstack.github.io/react-native-paper/)
+*   [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons)
