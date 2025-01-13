@@ -33,7 +33,7 @@ Before you begin, ensure you have met the following requirements:
 1. **Clone the repository:**
 
     ```bash
-    git clone [<repository-url>](https://github.com/lamaachi/GarbageCan)
+    git clone https://github.com/lamaachi/GarbageCan
     cd GarbageCan
     ```
 
@@ -70,13 +70,4 @@ This project serves as a basic example. Here are some potential improvements and
 
 Contributions are welcome! Please feel free to submit pull requests or open issues to suggest improvements or report bugs.
 
-## License
 
-This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
-
-## Acknowledgments
-
-*   [React Native](https://reactnative.dev/)
-*   [Expo](https://expo.dev/)
-*   [react-native-paper](https://callstack.github.io/react-native-paper/)
-*   [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons)
